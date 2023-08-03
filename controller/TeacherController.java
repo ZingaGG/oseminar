@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class TeacherController implements IUserController<Teacher> {
-    private UserView teacherView = new TeacherView();
+    private UserView teacherView = new TeacherView(); // Возможна абстратктная реализация, путем создания поля интерфейса
     private TeacherService teacherService = new TeacherService();
     @Override
     public void create(String firstName, String surName, String lastName) {

@@ -10,7 +10,7 @@ import java.util.List;
 
 public class StudentController implements IUserController{
 
-    private UserView studentsView = new StudentView();
+    private UserView studentsView = new StudentView(); // Возможна абстрактная реализация
     @Override
     public void create(String firstName, String surName, String lastName) {
         User newStudent = new Student(firstName, lastName, surName, LocalDate.now());

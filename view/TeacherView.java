@@ -5,6 +5,7 @@ import ru.gb.oseminar.data.Teacher;
 import java.util.List;
 
 public class TeacherView implements UserView<Teacher>{
+
     @Override
     public void sendOnConsole(List<Teacher> listT) {
         System.out.println("Список студентов");
